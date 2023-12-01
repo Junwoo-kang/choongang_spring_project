@@ -441,9 +441,8 @@ public class HijServiceImpl implements HijService {
 			hijSearchRequestDto.setTablename(table);
 			
 			//-----------------------------------------------------------
-			hijSearchResponseDtoList = hd.searchAll(hijSearchRequestDto);
+			hijSearchResponsMerge.addAll(hd.searchAll(hijSearchRequestDto));
 			//-----------------------------------------------------------
-			hijSearchResponsMerge.addAll(hijSearchResponseDtoList);
 		}
 		
 		return hijSearchResponsMerge;

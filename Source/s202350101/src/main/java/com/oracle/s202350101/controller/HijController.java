@@ -456,6 +456,7 @@ public class HijController {
 	}
 
 //--------------------------------------------------------------------------------------
+	// 통합검색
 	@PostMapping(value = "search_all")
 	@ResponseBody
 	public List<HijSearchResponseDto> searchAll(@RequestBody HijSearchRequestDto hijSearchRequestDto, Model model){
